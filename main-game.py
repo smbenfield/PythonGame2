@@ -1,4 +1,7 @@
 # Main file for game
+import charsheet as chars
+import freqstrings as strs
+
 name = None
 pronouns = None
 age = None
@@ -15,9 +18,12 @@ deadend = "You have reached a dead end, please return to whence you came."
 
 # Character Management
 
+print strs.dead[1]
+
 
 print "Welcome to Programmin' Cameryn's World of Adventure!"
-print "What is your name?"
-name = raw_input(prompt)
+character = chars.CharCreate()
 
-print "Thank you, %s.", name
+print character
+
+print "Thank you,", character[0]
